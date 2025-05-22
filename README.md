@@ -22,14 +22,17 @@ The goal is to process transactional data from CSV, clean and filter it, perform
 ## Project Structure
 
 ```bash
-.
-├── jobs/
-│   └── purchase_transform.py     # Entry point script using CLI args
-├── src/
-│   ├── __init__.py
-│   └── data_processing.py        # Core processing logic (clean, filter, aggregate)
-├── tests/
-│   ├── __init__.py
-│   └── test_process.py           # PySpark unit tests using mock data
-├── README.md                     # Project documentation
-└── requirements.txt              # Python + PySpark dependencies
+
+|-- docs/
+        fault_tolerance.md
+        performance_troubleshooting.pdf        
+|-- jobs/
+       purchase_transform.py     # Entry point script using CLI args
+|-- src/
+        __init__.py
+        data_processing.py        # Core processing logic (clean, filter, aggregate)
+|-- tests/
+        __init__.py
+        test_process.py           # PySpark unit tests using mock data
+|-- README.md                     # Project documentation
+|-- requirements.txt              # Python + PySpark dependencies
